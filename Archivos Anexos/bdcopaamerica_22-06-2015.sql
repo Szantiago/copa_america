@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.2.7.1
+-- version 4.2.11
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-06-2015 a las 01:39:13
--- Versión del servidor: 5.6.20
--- Versión de PHP: 5.5.15
+-- Tiempo de generación: 22-06-2015 a las 10:51:31
+-- Versión del servidor: 5.6.21
+-- Versión de PHP: 5.6.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `tbapuesta` (
   `marcadorvisit` int(2) NOT NULL,
   `idpartido` int(11) NOT NULL,
   `idusuario` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -45,7 +45,8 @@ CREATE TABLE IF NOT EXISTS `tbciudad` (
   `nombreciudad` varchar(50) NOT NULL,
   `numerohab` int(11) NOT NULL,
   `estadioprinc` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 -- --------------------------------------------------------
 
@@ -57,7 +58,7 @@ CREATE TABLE IF NOT EXISTS `tbciudadxgrupo` (
 `idciuxgru` int(11) NOT NULL,
   `idciudad` int(11) NOT NULL,
   `idgrupo` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -71,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `tbentrenador` (
   `apellidodt` varchar(25) NOT NULL,
   `nacionalidaddt` int(11) NOT NULL,
   `fechanacdt` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -86,7 +87,8 @@ CREATE TABLE IF NOT EXISTS `tbequipo` (
   `paginaweb` varchar(50) DEFAULT NULL,
   `ciudadcap` int(11) NOT NULL,
   `grupo` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 -- --------------------------------------------------------
 
@@ -100,7 +102,7 @@ CREATE TABLE IF NOT EXISTS `tbequipodirigido` (
   `iddt` int(11) NOT NULL,
   `fechaini` datetime NOT NULL,
   `fechafin` datetime DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -111,7 +113,8 @@ CREATE TABLE IF NOT EXISTS `tbequipodirigido` (
 CREATE TABLE IF NOT EXISTS `tbgrupo` (
 `idgrupo` int(11) NOT NULL,
   `nombregrup` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 -- --------------------------------------------------------
 
@@ -123,7 +126,7 @@ CREATE TABLE IF NOT EXISTS `tbnacionalidad` (
 `idnacionalidad` int(11) NOT NULL,
   `pais` varchar(30) NOT NULL,
   `nombrenacio` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -135,11 +138,11 @@ CREATE TABLE IF NOT EXISTS `tbpartidos` (
 `idpartido` int(11) NOT NULL,
   `equipolocal` int(11) NOT NULL,
   `equipovisit` int(11) NOT NULL,
-  `idciudadestadio` int(11) NOT NULL,
   `horario` datetime NOT NULL,
-  `marcadorlocal` int(2) NOT NULL,
-  `marcadorvisit` int(2) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `idciudadestadio` int(11) NOT NULL,
+  `marcadorlocal` int(2) DEFAULT NULL,
+  `marcadorvisit` int(2) DEFAULT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -150,7 +153,7 @@ CREATE TABLE IF NOT EXISTS `tbpartidos` (
 CREATE TABLE IF NOT EXISTS `tbtipousuario` (
 `idtipousuario` int(11) NOT NULL,
   `tipo` varchar(15) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -163,7 +166,7 @@ CREATE TABLE IF NOT EXISTS `tbtitulo` (
   `titulo` varchar(50) NOT NULL,
   `iddt` int(11) NOT NULL,
   `descripcion` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -180,7 +183,7 @@ CREATE TABLE IF NOT EXISTS `tbusuario` (
   `username` varchar(25) NOT NULL,
   `password` varchar(15) NOT NULL,
   `tipouser` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Índices para tablas volcadas
@@ -238,7 +241,7 @@ ALTER TABLE `tbnacionalidad`
 -- Indices de la tabla `tbpartidos`
 --
 ALTER TABLE `tbpartidos`
- ADD PRIMARY KEY (`idpartido`), ADD KEY `equipolocal` (`equipolocal`,`equipovisit`,`idciudadestadio`), ADD KEY `equipovisit` (`equipovisit`), ADD KEY `idciudadestadio` (`idciudadestadio`);
+ ADD PRIMARY KEY (`idpartido`,`equipolocal`,`equipovisit`), ADD KEY `equipolocal` (`equipolocal`), ADD KEY `equipovisit` (`equipovisit`), ADD KEY `idciudadestadio` (`idciudadestadio`), ADD KEY `idciudadestadio_2` (`idciudadestadio`);
 
 --
 -- Indices de la tabla `tbtipousuario`
