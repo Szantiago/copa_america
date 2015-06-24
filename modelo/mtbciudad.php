@@ -12,7 +12,7 @@
 		
 		}
 		/*
-		 *función para el igreso de los datos de la tabla tbciudad
+		 *función para el ingreso de los datos de la tabla tbciudad
 		 */
 		function igresar_datos_ciudad($nombreciudad, $numerohab, $estadioprinc, $idciudad)
 		{
