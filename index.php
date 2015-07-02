@@ -9,10 +9,9 @@
 		<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
-	<div id="contenedor">
-		
+	<div id="contenedor">		
 			<header>
-				<img src="img/logo.png"  width="50%" align="left">				
+				<img class="logo" src="img/logo.png" align="left">				
 			</header>
 			<br>			
 			<div class="row-fluid parrafo">

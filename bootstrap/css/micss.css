@@ -28,15 +28,17 @@ header{
 	}
 .parrafo{
 	margin-left: 10%;
-	margin-right: 16%;
+	margin-right: 10%;
 	font-size: 140%;
 	text-align: left;
 	 font-weight: bold;
 	 margin-bottom: 2%;
 	 margin-top: 15%;
 	 font-family: 'Varela Round', sans-serif;
-	 width: 100%;
-	 padding-right: 20%;
+	 padding-right: 10%;
+	 }
+.logo{
+	width: 50%;
 	}
 .letratitul{
 	font-family: 'Chicle', cursive;
@@ -52,7 +54,12 @@ header{
 
 /*smartphone*/
 @media (max-width: 480px){
-header{width: 170%; padding-bottom:5%;}
+.logo{width: 90%; 
+	  padding-bottom:5%;}
+.parrafo{font-size: 120%;
+		margin-left: 5%;
+		margin-right: 5%;
+		text-align: center;}
 }	
 
 
