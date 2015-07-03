@@ -241,7 +241,7 @@ ALTER TABLE `tbnacionalidad`
 -- Indices de la tabla `tbpartidos`
 --
 ALTER TABLE `tbpartidos`
- ADD PRIMARY KEY (`idpartido`,`equipolocal`,`equipovisit`), ADD KEY `equipolocal` (`equipolocal`), ADD KEY `equipovisit` (`equipovisit`), ADD KEY `idciudadestadio` (`idciudadestadio`), ADD KEY `idciudadestadio_2` (`idciudadestadio`);
+ ADD PRIMARY KEY (`idpartido`), ADD KEY `equipolocal` (`equipolocal`), ADD KEY `equipovisit` (`equipovisit`), ADD KEY `idciudadestadio` (`idciudadestadio`), ADD KEY `idciudadestadio_2` (`idciudadestadio`);
 
 --
 -- Indices de la tabla `tbtipousuario`
