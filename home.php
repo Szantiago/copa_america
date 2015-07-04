@@ -56,11 +56,89 @@
 					{
 				?> 
 				 <?php
-					if ($variable==2) {
-						include("vista/v.php");
+					// tabla usuario
+					if ($variable==1) {
+						include("vista/vtbusuario.php");
 					}
+					if ($variable==2) {
+						include("vista/vactutbusuario.php");
+					}
+					// tabla apuesta
 					if ($variable==3) {
-						include("vista/v2.php");
+						include("vista/vtbapuesta.php");
+					}
+					if ($variable==4) {
+						include("vista/vactutbapuesta.php");
+					}
+					// tabla ciudad
+					if ($variable==5) {
+						include("vista/vtbciudad.php");
+					}
+					if ($variable==6) {
+						include("vista/vactutbciudad.php");
+					}
+					// tabla ciudad x grupo
+					if ($variable==7) {
+						include("vista/vtbciudadxgrupo.php");
+					}
+					if ($variable==8) {
+						include("vista/vactutbciudadxgrupo.php");
+					}
+					// tabla entrenador
+					if ($variable==9) {
+						include("vista/vtbentrenador.php");
+					}
+					if ($variable==10) {
+						include("vista/vactutbentrenador.php");
+					}
+					// tabla equipo
+					if ($variable==11) {
+						include("vista/vtbequipo.php");
+					}
+					if ($variable==12) {
+						include("vista/vactutbequipo.php");
+					}
+					// tabla equipo dirigido
+					if ($variable==13) {
+						include("vista/vtbequipodirigido.php");
+					}
+					if ($variable==14) {
+						include("vista/vactutbequipodirigido.php");
+					}
+					// tabla grupo
+					if ($variable==15) {
+						include("vista/vtbgrupo.php");
+					}
+					if ($variable==16) {
+						include("vista/vactutbgrupo.php");
+					}
+					// tabla nacionalidad
+					if ($variable==17) {
+						include("vista/vtbnacionalidad.php");
+					}
+					if ($variable==18) {
+						include("vista/vactutbnacionalidad.php");
+					}
+					// tabla partidos
+					if ($variable==19) {
+						include("vista/vtbpartidos.php");
+					}
+					if ($variable==20) {
+						include("vista/vactutbpartidos.php");
+					}
+					// tabla tipo de usuario
+					if ($variable==21) {
+						include("vista/vtbtipousuario.php");
+					}
+					if ($variable==22) {
+						include("vista/vactutbtipousuario.php");
+					}
+					// tabla titulo del entrenador
+					if ($variable==23) {
+						include("vista/vtbtitulo.php");
+					}
+					if ($variable==24) {
+						include("vista/vactutbtitulo.php");
 					}
 				?> 
 				<?php
