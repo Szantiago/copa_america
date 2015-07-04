@@ -43,7 +43,7 @@
 					<td><?= $consultaciudades[$i]['nombreciudad'] ?></td>
 					<td><?= $consultaciudades[$i]['numerohab'] ?></td>
 					<td><?= $consultaciudades[$i]['estadioprinc'] ?></td>
-					<td><a href="index.php?pag=8&id=<?= $consultaciudades[$i]['idciudad'] ?>" class="btn btn-primary">Editar</a></td>
+					<td><a href="home.php?var=6&id=<?= $consultaciudades[$i]['idciudad'] ?>" class="btn btn-primary">Editar</a></td>
 					<td>
 						<form action="" method="POST" onSubmit="return confirm('Desea eliminar el registro!');">
 							<input type="hidden" name="idciudadeli" value="<?= $consultaciudades[$i]['idciudad'] ?>">

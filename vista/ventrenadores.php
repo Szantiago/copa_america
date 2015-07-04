@@ -19,8 +19,8 @@
             <label for="">nacionalidad:</label>
             <select name="nacionalidaddt" class="form-control">
 				<option value="">Seleccione nacionalidad</option>
-				<?php for($i=0 ; $i < count($nacio = $entrenador->consultar_nacionalidad()) ; $i++): ?>
-					<option value="<?= $nacio[$i]['idnacionalidad'] ?>"><?= $nacio[$i]['pais'] ?></option>
+				<?php for($i=0 ; $i < count($nacionalidad) ; $i++): ?>
+					<option value="<?= $nacionalidad[$i]['idnacionalidad'] ?>"><?= $nacionalidad[$i]['pais'] ?></option>
 				<?php endfor ?>
 			</select>
 		</div>

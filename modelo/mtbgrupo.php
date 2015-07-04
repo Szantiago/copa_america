@@ -5,7 +5,7 @@
 	*/
 	include ("controlador/conexion.php");
 	include("functions.php");
-	class Mgrupo extends Funciones_generales {
+	class Mgrupo extends Funciones{
 		
 		function Mgrupo()
 		{

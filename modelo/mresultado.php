@@ -2,7 +2,7 @@
 	include("controlador/conexion.php");
 	include("functions.php");
 
-	class resultado extends funciones_generales {
+	class resultado extends Funciones {
 
 		private $marcadorlocal = "";
 		private $marcadorvisit = "";

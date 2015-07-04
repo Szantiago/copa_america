@@ -15,6 +15,8 @@
 
 	$identrenador = isset($_GET['id']) ? $_GET['id'] : NULL;	
 
+	$nacionalidad = $entrenador->get_nacionalidad();
+	
 	if ($nombredt && $apellidodt && $nacionalidaddt && $fechanacdt && !$actu) 
 	{
 		$entrenador->insertar_entrenador($nombredt, $apellidodt, $nacionalidaddt, $fechanacdt);

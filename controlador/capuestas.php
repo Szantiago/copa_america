@@ -1,7 +1,7 @@
 <?php
 	
 	//Controller User
-	include("modelo/mtbapuestas.php");
+	include("modelo/mtbapuesta.php");
         
         $marcadorlocal 	= isset($_POST['marcadorlocal']) ? $_POST['marcadorlocal'] : NULL;
         $marcadorvisit	= isset($_POST['marcadorvisit']) ? $_POST['marcadorvisit'] : NULL;

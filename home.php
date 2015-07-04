@@ -65,7 +65,7 @@
 					}
 					// tabla apuesta
 					if ($variable==3) {
-						include("vista/vapuesta.php");
+						include("vista/vapuestas.php");
 					}
 					if ($variable==4) {
 						include("vista/vactutbapuesta.php");
