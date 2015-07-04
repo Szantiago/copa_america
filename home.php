@@ -58,24 +58,24 @@
 				 <?php
 					// tabla usuario
 					if ($variable==1) {
-						include("vista/vtbusuario.php");
+						include("vista/vusuario.php");
 					}
 					if ($variable==2) {
 						include("vista/vactutbusuario.php");
 					}
 					// tabla apuesta
 					if ($variable==3) {
-						include("vista/vtbapuesta.php");
+						include("vista/vapuesta.php");
 					}
 					if ($variable==4) {
 						include("vista/vactutbapuesta.php");
 					}
 					// tabla ciudad
 					if ($variable==5) {
-						include("vista/vtbciudad.php");
+						include("vista/vciudad.php");
 					}
 					if ($variable==6) {
-						include("vista/vactutbciudad.php");
+						include("vista/vactuciudad.php");
 					}
 					// tabla ciudad x grupo
 					if ($variable==7) {
@@ -86,17 +86,17 @@
 					}
 					// tabla entrenador
 					if ($variable==9) {
-						include("vista/vtbentrenador.php");
+						include("vista/ventrenadores.php");
 					}
 					if ($variable==10) {
-						include("vista/vactutbentrenador.php");
+						include("vista/vactuentrenadores.php");
 					}
 					// tabla equipo
 					if ($variable==11) {
-						include("vista/vtbequipo.php");
+						include("vista/vequipos.php");
 					}
 					if ($variable==12) {
-						include("vista/vactutbequipo.php");
+						include("vista/vactuequipos.php");
 					}
 					// tabla equipo dirigido
 					if ($variable==13) {
@@ -107,10 +107,10 @@
 					}
 					// tabla grupo
 					if ($variable==15) {
-						include("vista/vtbgrupo.php");
+						include("vista/vgrupos.php");
 					}
 					if ($variable==16) {
-						include("vista/vactutbgrupo.php");
+						include("vista/vactugrupo.php");
 					}
 					// tabla nacionalidad
 					if ($variable==17) {
@@ -121,10 +121,10 @@
 					}
 					// tabla partidos
 					if ($variable==19) {
-						include("vista/vtbpartidos.php");
+						include("vista/vpartidos.php");
 					}
 					if ($variable==20) {
-						include("vista/vactutbpartidos.php");
+						include("vista/vactupartidos.php");
 					}
 					// tabla tipo de usuario
 					if ($variable==21) {
