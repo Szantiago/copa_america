@@ -25,7 +25,7 @@
 		 */
 		function  actualizar_entrenador ($iddt, $nombredt, $apellidodt, $nacionalidaddt, $fechanacdt)
 		{
-			$sql = "UPDATE tbentrenador SET  nombredt = '".$nombredt."', apellidodt = '".$apellidodt."', nacionalidaddt = '".$nacionalidaddt."' fechanacdt = '".$fechanacdt."' WHERE iddt = '".$iddt."';";
+			$sql = "UPDATE tbentrenador SET  nombredt = '".$nombredt."', apellidodt = '".$apellidodt."', nacionalidaddt = '".$nacionalidaddt."' ,fechanacdt = '".$fechanacdt."' WHERE iddt = '".$iddt."';";
 			$this -> cons($sql);
 		}
 		
@@ -34,6 +34,12 @@
 			$sql = "DELETE FROM `tbentrenador` WHERE `iddt` = '$iddt'";
 			$this -> cons($sql);
 		}	
+		
+		function consultar_entrenador()
+		{
+			$sql = "SELECT * FROM tbentrenador";
+			 return $this->SeleccionDatos($sql);
+		}
 		/*
     	 *	Función para retornar los datos de la tbentrenador	
          */

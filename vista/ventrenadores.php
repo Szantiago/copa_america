@@ -51,14 +51,16 @@
 			</tr>
 		</thead>
 		<tbody>
-			<?php for($i=0;$i<count($consultaentrenador);$i++): ?>
+			<?php for($i=0;$i<count($consultaentrenador);$i++):
+				$nacionalidad1 = $entrenador->get_nacionalidad($consultaentrenador[$i]['nacionalidaddt'])
+			?>
 				<tr>
 					<td><?= $i + 1 ?></td>
-					<td><?= $consultaentrenador[$i]['nombredt'] ?></td>
-					<td><?= $consultaentrenador[$i]['apellidodt'] ?></td>
-					<td><?php nombrepais($consultaentrenador[$i]['nacionalidaddt'], $entrenador) ?></td>
-					<td><?= $consultaentrenador[$i]['fechanacdt'] ?></td>
-					<td><a href="index.php?pag=6&id=<?= $consultaentrenador[$i]['iddt'] ?>" class="btn btn-primary">Editar</a></td>
+					<td><?= $consultaentrenador[$i]['nombredt']; ?></td>
+					<td><?= $consultaentrenador[$i]['apellidodt']; ?></td>
+					<td><?= $nacionalidad1[0]['nombrenacio']; ?></td>
+					<td><?= $consultaentrenador[$i]['fechanacdt']; ?></td>
+					<td><a href="home.php?var=10&id=<?= $consultaentrenador[$i]['iddt'] ?>" class="btn btn-primary">Editar</a></td>
 					<td>
 						<form action="" method="POST" onSubmit="return confirm('Desea eliminar el registro!');">
 							<input type="hidden" name="iddteli" value="<?= $consultaentrenador[$i]['iddt'] ?>">

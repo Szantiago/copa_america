@@ -100,20 +100,31 @@
 				</div>
 		</div>
 		<!--fin banner-->	
-			<div class="row-fluid">
-			<div class="col-md-6 menuarrib">
+			<div class="row-fluid">			
+				<div class="col-md-12">
+					<form>					
+						<div class="form-group col-md-4">
+							<label>Usuario:</label>
+							<input name="usuario" type="text" class="form-control">
+						</div>
+						<div class="form-group col-md-4">				
+							<label>Contraseña:</label>
+							<input name="contraseña" type="password" class="form-control">				
+						</div>
+						<div class="form-group col-md-2"><br>
+						<input type="submit" value="Ingresar" class="btn btn-success glyphicon glyphicon-user">
+						</div>
+					</form>
+				<div class="col-md-2 menuarrib">
 				<button type="button" class="btn btn-primary btn-md">
 				<span class="glyphicon glyphicon-pencil"></span>&nbsp;
 				REGISTRARSE</button>
 			</div>
+				</div>
 				
-			<div class="col-md-6 menuarrib">
-				<button type="button" class="btn btn-success btn-md">
-				<span class="glyphicon glyphicon-user"></span>&nbsp;
-				INGRESAR</button>
-			</div>
 			</div>
 			<div class="row-fluid banner">
+			
 				<img src="img/afi.png"  width="90%" align="center">
 				<img src="img/equipos.png"  width="90%" align="center">
 			</div>	
@@ -122,8 +133,9 @@
 	
 	<footer>
 	
-			<p>"Proyecto COPA AMÉRICA Chile 2015" Desarrolado por Grupo ICETEX - ENID<BR>
-			Escuela Nacional de Innovación y Desarrollo en Liderazgo</p>
+			<p>texto pie pagina texto pie pagina texto pie pagina texto pie pagina texto pie pagina
+			texto pie pagina texto pie pagina texto pie pagina texto pie pagina texto pie pagina
+			texto pie pagina texto pie pagina texto pie pagina texto pie pagina texto pie pagina</p>
 			
 	</footer>
 </html>

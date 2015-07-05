@@ -22,7 +22,7 @@
 		$entrenador->insertar_entrenador($nombredt, $apellidodt, $nacionalidaddt, $fechanacdt);
 	}
 
-	if ($iddtedit && $nombredt && $apellidodt && $nacionalidaddt && $fechanacdt && $actu) 
+	if ($iddtedit && $actu) 
 	{
 		$entrenador->actualizar_entrenador($iddtedit, $nombredt, $apellidodt, $nacionalidaddt, $fechanacdt);
 	}

@@ -3,7 +3,7 @@
 <div class="container-fluid">
 	<h1>Editar entrenador</h1>
 
-	<form action="index.php?pag=5&id=<?= $identrenador ?>" method="POST">
+	<form action="home.php?var=9&id=<?= $identrenador ?>" method="POST">
 		<div class="form-group col-lg-6">
             <label for="">Nombre del entrenador:</label>
 			<input type="text" class="form-control" name="nombredt" value="<?= $consultaedit[0]['nombredt']  ?>">
@@ -23,7 +23,7 @@
 		</div>
 		<div class="form-group col-lg-6">
 			<label for="">fecha de nacimiento:</label>
-		    <input type="text" class="form-control" name="fechanacdt" value="<?= $consultaedit[0]['fechanacdt']  ?>">
+		    <input type="date" name="fechanacdt" class="form-control" value="<?= $consultaedit[0]['fechanacdt']?>">
             <input type="hidden" name="iddt" value="<?= $identrenador ?>">
             <input type="hidden" name="actu" value="actu">       
 		</div>
