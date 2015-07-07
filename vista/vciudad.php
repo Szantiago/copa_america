@@ -6,7 +6,7 @@
 	<form action="" method="POST">
 		<div class="form-group col-lg-6">
             <label for="">Nombre de la Ciudad:</label>
-            <input type="text" class="form-control" name="nombreciudad" pattern="[A-z ]{2,50}" title="Solo letras" required>       
+            <input type="text" class="form-control" name="nombreciudad" pattern="[A-z ]{2,50}" title="Solo se permiten letras máximo 50 caracteres" required>       
 		</div>
 		<div class="form-group col-lg-6">
             <label for="">Número de Habitantes:</label>

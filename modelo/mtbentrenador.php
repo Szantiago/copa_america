@@ -31,7 +31,7 @@
 		
 		function eliminar_entrenador($iddt)
 		{
-			$sql = "DELETE FROM `tbentrenador` WHERE `iddt` = '$iddt'";
+			$sql = "DELETE FROM `tbentrenador` WHERE iddt = '".$iddt."';";
 			$this -> cons($sql);
 		}	
 		
@@ -45,15 +45,23 @@
          */
 		function consultar_entrenador_id($iddt)
 		{
-			$sql = "SELECT nombredt, apellidodt, nacionalidaddt, fechanacdt FROM tbentrenador WHERE iddt = $iddt";
+			$sql = "SELECT nombredt, apellidodt, nacionalidaddt, fechanacdt FROM tbentrenador WHERE iddt = '".$iddt."';";
 			 return $this->SeleccionDatos($sql);
 		}
-		function get_nacionalidad()
-		{
-			$sql = "SELECT * FROM tbnacionalidad";
+		/*
+		 	Función para la seleccion general de los datos de la tabla nacionalidad
+		 */
+		function sel_nacionalidad(){
+			$sql = "SELECT idnacionalidad, pais, nombrenacio FROM tbnacionalidad;";
 			return $this->SeleccionDatos($sql);
 		}
-		
+		/*
+		 	Función para la seleccion especifica de los datos de la tabla nacionalidad
+		 */
+		function sel_nacionalidad1($nacio){
+			$sql = "SELECT idnacionalidad, pais, nombrenacio FROM tbnacionalidad WHERE idnacionalidad='".$nacio."';";
+			return $this->SeleccionDatos($sql);
+		}
 	}
 
 	

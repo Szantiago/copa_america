@@ -9,7 +9,7 @@
 			<select name="idciudad" class="form-control">
 				<option value=0> Seleccione una opcion </option>
 				<?php for($i=0;$i<count($idciudad2);$i++): ?>
-					<option value ="<?php echo $idciudad2[$i]['idciudad'] ?>" ><?php echo $idciudad2[$i]['nombreciudad'] ?></option>
+					<option value ="<?= $idciudad2[$i]['idciudad'] ?>" ><?= $idciudad2[$i]['nombreciudad'] ?></option>
 				<?php endfor; ?>
 			</select>
 		</div>
@@ -18,13 +18,13 @@
 			<select name="idgrupo" class="form-control">
 				<option value=0> Seleccione una opcion </option>
 				<?php for($i=0;$i<count($idgrupo2);$i++): ?>
-					<option value ="<?php echo $idgrupo2[$i]['idgrupo'] ?>" ><?php echo $idgrupo2[$i]['nombregrup'] ?></option>
+					<option value ="<?= $idgrupo2[$i]['idgrupo'] ?>" ><?= $idgrupo2[$i]['nombregrup'] ?></option>
 				<?php endfor; ?>
 			</select>
 		</div>
 		<div class="form-group col-md-12 center">
             <input type="submit" class="btn btn-success" value="Enviar">
-			<a href="home.php" class="btn btn-success">Volver</a>
+			<a href="home.php?" class="btn btn-success">Volver</a>
         </div>
 	</form>
 	<?php $consultaciudadxgrupo = $ciudadxgrupo->consultar_ciugru(); ?>

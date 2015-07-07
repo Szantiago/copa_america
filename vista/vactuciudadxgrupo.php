@@ -3,7 +3,7 @@
 ?>
 <div class="row-fluid">
 <h1>Editar Grupo y Ciudad</h1>
-	<form action="home.php?var=7&id=<?= $idciuxgru ?>"" method="POST">
+	<form action="home.php?var=7&id=<?= $idciuxgru ?>" method="POST">
 		<div class="form-group col-lg-6">
             <label>Ciudad:</label><br />
 			<select name="idciudad" class="form-control">
