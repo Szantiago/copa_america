@@ -6,19 +6,19 @@
 	<form action="" method="POST">
 		<div class="form-group col-lg-6">
             <label for="">Nombre de la Ciudad:</label>
-            <input type="text" class="form-control" name="nombreciudad">       
+            <input type="text" class="form-control" name="nombreciudad" pattern="[A-z ]{2,50}" title="Solo letras" required>       
 		</div>
 		<div class="form-group col-lg-6">
-            <label for="">Numero habitantes:</label>
-            <input type="text" class="form-control" name="numerohab">       
+            <label for="">Número de Habitantes:</label>
+            <input type="text" class="form-control" name="numerohab" pattern="[0-9]{3,11}" title="Solo cifras numericas" placeholder="ej: 125700" required>       
 		</div>
 		<div class="form-group col-lg-6">
-            <label for="">estadio principal:</label>
-            <input type="text" class="form-control" name="estadioprinc">       
+            <label for="">Estadio Principal:</label>
+            <input type="text" class="form-control" name="estadioprinc" pattern="[A-z ]{2,50}" title="Solo se permiten letras máximo 50 caracteres" required >       
 		</div>
-
 		 <div class="form-city col-lg-6">
-            <input type="submit" class="btn btn-primary" value="Insertar">
+            <input type="submit" class="btn btn-success" value="Insertar">
+			 <a href="home.php" class="btn btn-success">Volver</a>
         </div>
 	</form>
 	<?php $consultaciudades = $ciudad->consultar_ciudades(); ?>
@@ -30,8 +30,8 @@
 			<tr>
 				<th>#</th>
 				<th>Nombre de la Ciudad</th>
-				<th>Numero de habitantes</th>
-				<th>Estadio principal</th>
+				<th>Número de Habitantes</th>
+				<th>Estadio Principal</th>
 				<th>Edición</th>
 				<th>Eliminación</th>
 			</tr>

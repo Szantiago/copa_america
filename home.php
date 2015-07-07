@@ -79,10 +79,10 @@
 					}
 					// tabla ciudad x grupo
 					if ($variable==7) {
-						include("vista/vtbciudadxgrupo.php");
+						include("vista/vciudadxgrupo.php");
 					}
 					if ($variable==8) {
-						include("vista/vactutbciudadxgrupo.php");
+						include("vista/vactuciudadxgrupo.php");
 					}
 					// tabla entrenador
 					if ($variable==9) {

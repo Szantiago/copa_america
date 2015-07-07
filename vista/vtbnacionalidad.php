@@ -14,7 +14,7 @@
 		</div>
 		<div class="form-group col-md-12 center">
             <input type="submit" class="btn btn-success" value="Enviar">
-			 <a href="javascript:history.back();" class="btn btn-success">Volver</a>
+			<a href="javascript:history.back();" class="btn btn-success">Volver</a>
             <a href="home.php" class="btn btn-success" >Salir</a>
         </div>
 	</form>
