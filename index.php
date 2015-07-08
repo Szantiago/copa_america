@@ -116,15 +116,14 @@
 						</div>
 					</form>
 				<div class="col-md-2 menuarrib">
-				<button type="button" class="btn btn-primary btn-md">
+				<a href="home.php?var=1" class="btn btn-primary btn-md">
 				<span class="glyphicon glyphicon-pencil"></span>&nbsp;
-				REGISTRARSE</button>
+				REGISTRARSE</a>
 			</div>
 				</div>
 				
 			</div>
-			<div class="row-fluid banner">
-			
+			<div class="row-fluid banner">		
 				<img src="img/afi.png"  width="90%" align="center">
 				<img src="img/equipos.png"  width="90%" align="center">
 			</div>	

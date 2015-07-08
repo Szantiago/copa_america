@@ -36,4 +36,10 @@
 	{
 		$partidos->eliminar_partidos($idpartidoelim);
 	}
+
+	function nombre_equipo($idequipo, $partidos)
+	{
+		$nomequi = $partidos->seleccionar_equipo_id($idequipo);
+		return $nomequi[0]['nomequi'];
+	}
 ?>

@@ -38,8 +38,10 @@
 		{
 			$sql = "SELECT * FROM tbequipo WHERE idequipo = '$idequipo' ";
 			return $this -> SeleccionDatos($sql);
+		}
 			
-		public function seleccionar_ciudadcap(){
+		public function seleccionar_ciudadcap()
+		{
 			$sql = "SELECT * FROM tbciudad;";
 			return $this->SeleccionDatos($sql);
 		}

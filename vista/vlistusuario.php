@@ -2,7 +2,7 @@
 
 <div class="container-fluid">
     <h1>Usuarios registrados</h1>
-    <a class="btn btn-primary" href="index.php?pag=1">Ingresar Usuarios</a>
+    <a class="btn btn-primary" href="home.php?var=25">Ingresar Usuarios</a>
     <br>
     <table class="table">
         <thead>

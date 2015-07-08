@@ -55,8 +55,8 @@
 			<?php for($i=0;$i<count($consultapartidos);$i++): ?>
 				<tr>
 					<td><?= $i + 1 ?></td>
-					<td><?= $consultapartidos[$i]['equipolocal'] ?></td>
-					<td><?= $consultapartidos[$i]['equipovisit'] ?></td>
+					<td><?= nombre_equipo($consultapartidos[$i]['equipolocal'], $partidos) ?></td>
+					<td><?= nombre_equipo($consultapartidos[$i]['equipovisit'], $partidos) ?></td>
 					<td><?= $consultapartidos[$i]['horario'] ?></td>
 					<td><?= $consultapartidos[$i]['marcadorlocal'] ?></td>
 					<td><?= $consultapartidos[$i]['marcadorvisit'] ?></td>

@@ -58,7 +58,7 @@
 				 <?php
 					// tabla usuario
 					if ($variable==1) {
-						include("vista/vusuario.php");
+						include("vista/vlistusuario.php");
 					}
 					if ($variable==2) {
 						include("vista/vactutbusuario.php");
@@ -139,6 +139,10 @@
 					}
 					if ($variable==24) {
 						include("vista/vactutbtitulo.php");
+					}
+					//Ingreso usuario
+					if ($variable==25) {
+						include("vista/vusuario.php");
 					}
 				?> 
 				<?php
