@@ -29,6 +29,13 @@
             <input type="submit" class="btn btn-success" value="Ingresar">
 			<a href="home.php?" class="btn btn-success">Volver</a>
         </div>
+		<div class="form-group col-lg-12" center>
+			<br>
+			<a href="home.php?var=13" class="btn btn-success">Agregar Equipos Dirigidos</a>
+		</div>
+		<div class="form-group col-lg-12" center>
+			<a href="home.php?" class="btn btn-success">Agregar Titulo</a>
+		</div>
 	</form>
 	<?php $consultaentrenador = $entrenador->consultar_entrenador(); ?>
 	<table class="table">

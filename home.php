@@ -100,10 +100,10 @@
 					}
 					// tabla equipo dirigido
 					if ($variable==13) {
-						include("vista/vtbequipodirigido.php");
+						include("vista/vequipodirigido.php");
 					}
 					if ($variable==14) {
-						include("vista/vactutbequipodirigido.php");
+						include("vista/vactuequipodirigido.php");
 					}
 					// tabla grupo
 					if ($variable==15) {
