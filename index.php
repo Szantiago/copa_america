@@ -1,3 +1,4 @@
+<?php include('modelo/mseguridad.php'); ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -102,17 +103,17 @@
 		<!--fin banner-->	
 			<div class="row-fluid">			
 				<div class="col-md-12">
-					<form>					
+					<form action="modelo/mcontrol.php" method="POST">					
 						<div class="form-group col-md-4">
 							<label>Usuario:</label>
 							<input name="usuario" type="text" class="form-control">
 						</div>
 						<div class="form-group col-md-4">				
 							<label>Contraseña:</label>
-							<input name="contraseña" type="password" class="form-control">				
+							<input name="password" type="password" class="form-control">				
 						</div>
 						<div class="form-group col-md-2"><br>
-						<input type="submit" value="Ingresar" class="btn btn-success glyphicon glyphicon-user">
+						<input type="submit" value="INGRESAR" class="btn btn-success">
 						</div>
 					</form>
 				<div class="col-md-2 menuarrib">
@@ -131,10 +132,8 @@
 	</div>
 	
 	<footer>
-	
-			<p>texto pie pagina texto pie pagina texto pie pagina texto pie pagina texto pie pagina
-			texto pie pagina texto pie pagina texto pie pagina texto pie pagina texto pie pagina
-			texto pie pagina texto pie pagina texto pie pagina texto pie pagina texto pie pagina</p>
-			
+		<p>texto pie pagina texto pie pagina texto pie pagina texto pie pagina texto pie pagina
+		texto pie pagina texto pie pagina texto pie pagina texto pie pagina texto pie pagina
+		texto pie pagina texto pie pagina texto pie pagina texto pie pagina texto pie pagina</p>
 	</footer>
 </html>
