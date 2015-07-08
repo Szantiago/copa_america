@@ -12,17 +12,17 @@
 
 		public function insertar_equipo($nomequi, $fechafund, $paginaweb, $ciudadcap, $grupo)
 		{
-			$sql = "INSERT INTO `tbequipo`(`nomequi`, `fechafund`, `paginaweb`, `ciudadcap`, `grupo`) VALUES (`$nomequi`, `$fechafund`, `$paginaweb`, `$ciudadcap`, `$grupo`)";
+			$sql = "INSERT INTO `tbequipo`(`nomequi`, `fechafund`, `paginaweb`, `ciudadcap`, `grupo`) VALUES ('$nomequi', '$fechafund', '$paginaweb', '$ciudadcap', '$grupo')";
 			$this -> cons($sql);
 		}
 
 		public function actualizar_equipo($idequipo, $nomequi, $fechafund, $paginaweb, $ciudadcap, $grupo)
 		{
-			$sql = "UPDATE `tbequipo` SET `nomequipo`='$nomequipo',`fechafund`='$fechafund',`paginaweb`='$paginaweb',`ciudadcap`='$ciudadcap',`grupo`='$grupo' WHERE `idequipo` = '$idequipo'";
+			$sql = "UPDATE `tbequipo` SET `nomequi`='$nomequi',`fechafund`='$fechafund',`paginaweb`='$paginaweb',`ciudadcap`='$ciudadcap',`grupo`='$grupo' WHERE `idequipo` = '$idequipo'";
 			$this -> cons($sql);
 		}	
 
-		public function eliminar_grupos($idequipo)
+		public function eliminar_equipo($idequipo)
 		{
 			$sql = "DELETE FROM `tbequipo` WHERE `idequipo` = '$idequipo'";
 			$this -> cons($sql);
@@ -39,28 +39,18 @@
 			$sql = "SELECT * FROM tbequipo WHERE idequipo = '$idequipo' ";
 			return $this -> SeleccionDatos($sql);
 		}
-			
-		public function seleccionar_ciudadcap()
-		{
-			$sql = "SELECT * FROM tbciudad;";
-			return $this->SeleccionDatos($sql);
-		}
 		/*
-		 	Función para la seleccionar los datos de la ciudad
+		 	Función para la seleccionar los datos del grupo
 		 */
-		public function seleccionar_ciudadcap_id($val_ciudad){
-			$sql = "SELECT idciudad, nombreciudad, numerohab, estadioprinc FROM tbciudad WHERE idciudad='".$val_ciudad."';";
-			return $this->SeleccionDatos($sql);	
-			
-		public function seleccionar_grupo(){
+		public function sel_grupo(){
 			$sql = "SELECT * FROM tbgrupo;";
 			return $this->SeleccionDatos($sql);
 		}
 		/*
-		 	Función para la seleccionar los datos del grupo
+		 	Función para la seleccionar los datos especificos de un grupo
 		 */
-		public function seleccionar_grupo_id($val_grupo){
-			$sql = "SELECT idgrupo, nombregrup FROM tbgrupo WHERE idgrupo='".$val_grupo."';";
+		public function sel_grupo1($grup){
+			$sql = "SELECT idgrupo, nombregrup FROM tbgrupo WHERE idgrupo='".$grup."';";
 			return $this->SeleccionDatos($sql);		
 		}		
 	}

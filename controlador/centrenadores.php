@@ -11,7 +11,7 @@
 	$fechanacdt 	= isset($_POST['fechanacdt']) ? $_POST['fechanacdt'] : NULL;
 	$iddteli 		= isset($_POST['iddteli']) ? $_POST['iddteli'] : NULL;
 	$actu 			= isset($_POST['actu']) ? $_POST['actu'] : NULL;
-	$iddt 	= isset($_GET['id']) ? $_GET['id'] : NULL;	
+	$iddt 			= isset($_GET['id']) ? $_GET['id'] : NULL;	
 
 	$nacionalidaddt2= $entrenador->sel_nacionalidad();
 	

@@ -26,7 +26,7 @@
 		</div>
         <div class="form-group col-lg-12 center">
             <input type="submit" class="btn btn-primary" value="Editar">
-			<a href="home.php?var=5" class="btn btn-success">Volver</a>
+			<a href="home.php?var=7" class="btn btn-success">Volver</a>
         </div>
 	</form>
 </div>

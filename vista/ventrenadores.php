@@ -12,7 +12,6 @@
             <label for="">Apellidos:</label>
             <input type="text" class="form-control" name="apellidodt" pattern="[A-z ]{2,25}" title="Solo se permiten letras máximo 25 caracteres" required>
 		</div>
-		
 		<div class="form-group col-lg-6">
             <label for="">Nacionalidad:</label>
             <select name="nacionalidaddt" class="form-control">

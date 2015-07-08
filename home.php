@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Apuestas Copa America</title>
+		<title>Apuestas Copa América</title>
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/micss.css" />
 		<link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
@@ -10,7 +10,7 @@
 	</head>
 	<div class="container">
 		<div class="row-fluid">
-			<h1 class="letratitul">Apuestas copa america</h1>
+			<h1 class="letratitul">Apuestas Copa América</h1>
 			<br />			
 			<div id="encabezado" class="menuarrib">				
 				<?php include("menu.php"); ?><!--AQUI SE INCLUYE EL PHP DEL MENU-->
@@ -96,7 +96,7 @@
 						include("vista/vequipos.php");
 					}
 					if ($variable==12) {
-						include("vista/vactuequipos.php");
+						include("vista/vactuequipo.php");
 					}
 					// tabla equipo dirigido
 					if ($variable==13) {

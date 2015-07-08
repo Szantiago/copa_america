@@ -17,6 +17,7 @@
             <input type="text" class="form-control" name="estadioprinc" pattern="[A-z ]{2,50}" title="Solo se permiten letras máximo 50 caracteres" required >       
 		</div>
 		 <div class="form-city col-lg-6">
+			<br>
             <input type="submit" class="btn btn-success" value="Insertar">
 			 <a href="home.php" class="btn btn-success">Volver</a>
         </div>

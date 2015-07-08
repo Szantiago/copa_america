@@ -26,7 +26,7 @@
 			<label for="">fecha de nacimiento:</label>
 		    <input type="date" name="fechanacdt" class="form-control" value="<?= $consultadt[0]['fechanacdt']?>">
 		</div>
-		<div class="form-group col-lg-6">
+		<div class="form-group col-lg-12 center">
             <input type="submit" class="btn btn-primary" value="Editar">
 			<a href="home.php?var=9" class="btn btn-success">Volver</a>
         </div>

@@ -35,8 +35,8 @@
 			</tr>
 			<tr>
 				<th>Codigo</th>
-				<th>Ciudad</th>
-				<th>Grupo</th>
+				<th>Ciudad Sede</th>
+				<th>Grupo al que pertenece la Sede</th>
 				<th>Edición</th>
 				<th>Eliminación</th>
 			</tr>
