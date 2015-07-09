@@ -110,7 +110,7 @@
 						include("vista/vgrupos.php");
 					}
 					if ($variable==16) {
-						include("vista/vactugrupo.php");
+						include("vista/vactugrupos.php");
 					}
 					// tabla nacionalidad
 					if ($variable==17) {

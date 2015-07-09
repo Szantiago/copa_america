@@ -32,7 +32,7 @@
 		</div>
 		<div class="form-group col-md-12 center">
             <input type="submit" class="btn btn-success" value="Enviar">
-			<a href="home.php?" class="btn btn-success">Volver</a>
+			<a href="home.php?var=9" class="btn btn-success">Volver</a>
         </div>
 	</form>
 	<?php $consulta = $equipodirigido->consultar_equipodir(); ?>

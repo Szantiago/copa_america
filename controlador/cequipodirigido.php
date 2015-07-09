@@ -4,7 +4,7 @@
 
 	$equipodirigido = new Mequipodir();
 
-	$idequipodiredit = isset($_POST['idequipodir']) ? $_POST['idequipodir'] : NULL;
+	$idequipodiredit= isset($_POST['idequipodir']) ? $_POST['idequipodir'] : NULL;
 	$equipodir 		= isset($_POST['equipodir']) ? $_POST['equipodir'] : NULL;
 	$iddt 			= isset($_POST['iddt']) ? $_POST['iddt'] : NULL;
 	$fechaini 		= isset($_POST['fechaini']) ? $_POST['fechaini'] : NULL;

@@ -25,15 +25,12 @@
             <label for="">Fecha Naciemiento:</label>
             <input type="date" class="form-control" name="fechanacdt">
 		</div>
-        <div class="form-group col-lg-12" center>
+        <div class="form-group col-lg-6" center>
             <input type="submit" class="btn btn-success" value="Ingresar">
 			<a href="home.php?" class="btn btn-success">Volver</a>
         </div>
-		<div class="form-group col-lg-12" center>
-			<br>
+		<div class="form-group col-lg-6" center>
 			<a href="home.php?var=13" class="btn btn-success">Agregar Equipos Dirigidos</a>
-		</div>
-		<div class="form-group col-lg-12" center>
 			<a href="home.php?" class="btn btn-success">Agregar Titulo</a>
 		</div>
 	</form>

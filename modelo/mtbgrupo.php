@@ -14,28 +14,44 @@
 		/*
 		 *función para el ingreso de los datos de la tabla tbgrupo
 		 */
-		function igresar_datos_grupo($nombregrup, $idgrupo)
+		function insertar_grupo($nombregrup)
 		{
-			$sql = "INSERT INTO tbgrupo (nombregrup,idgrupo)
-						VALUES ('".$nombregrup."','".$idgrupo."');";
+			$sql = "INSERT INTO tbgrupo (nombregrup)
+						VALUES ('".$nombregrup."');";
 			$this -> cons($sql);
 		}
 		/*
 		 *función para la actualización de los datos de la tabla tbgrupo
 		 */
-		function  actu_grupo ($nombregrup, $idgrupo)
+		function  actualizar_grupo($idgrupo, $nombregrup)
 		{
 			$sql = "UPDATE tbgrupo SET  nombregrup = '".$nombregrup."' WHERE idgrupo = '".$idgrupo."';";
 			$this -> cons($sql);
 		}
 		/*
-    	 *	Función para retornar los datos de la tbgrupo	
-         */
-		function ver_datos_grupo($idgrupo)
+		 	Función para la eliminacion de los datos en la tabla
+		 */
+		function eliminar_grupo($idgrupo)
 		{
-			$sql = "SELECT nombregrup  FROM tbgrupo WHERE idgrupo = $idgrupo";
-			 return $this->SeleccionDatos($sql);
+			$sql = "DELETE FROM `tbgrupo` WHERE `idgrupo` = '$idgrupo'";
+			$this -> cons($sql);
 		}
+/*
+		 	Función para la consulta general en la tabla
+		 */
+		function consultar_grupo()
+		{
+			$sql = "SELECT * FROM tbgrupo";
+			return $this -> SeleccionDatos($sql);
+		}
+		/*
+		 	Función para la consulta especifica en la tabla
+		 */
+		function consultar_grupo_id($idgrupo)
+		{
+			$sql = "SELECT * FROM tbgrupo WHERE idgrupo = '$idgrupo' ";
+			return $this -> SeleccionDatos($sql);
+		}		
 	}
 
 	
