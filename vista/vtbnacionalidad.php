@@ -6,16 +6,15 @@
 	<form role="form" name="form1" method="POST" action="">		
 		<div class="form-group col-md-6">
 			<label>Pais:</label><br />
-			<input name="pais" type="text" class="form-control">
+			<input name="pais" type="text" class="form-control" pattern="[A-z ]{2,30}" title="Solo se permiten letras máximo 30 caracteres" required>
 		</div>
 		<div class="form-group col-md-6">
 			<label>Nacionalidad:</label><br />
-			<input name="nombrenacio" type="text" class="form-control">
+			<input name="nombrenacio" type="text" class="form-control" pattern="[A-z ]{2,30}" title="Solo se permiten letras máximo 30 caracteres" required>
 		</div>
 		<div class="form-group col-md-12 center">
             <input type="submit" class="btn btn-success" value="Enviar">
-			<a href="javascript:history.back();" class="btn btn-success">Volver</a>
-            <a href="home.php" class="btn btn-success" >Salir</a>
+            <a href="home.php?" class="btn btn-success" >Volver</a>
         </div>
 	</form>
 	<?php $consultanacio = $nacionalidad->consultar_nacionalidad(); ?>
