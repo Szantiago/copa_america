@@ -135,10 +135,10 @@
 					}
 					// tabla titulo del entrenador
 					if ($variable==23) {
-						include("vista/vtbtitulo.php");
+						include("vista/vtitulo.php");
 					}
 					if ($variable==24) {
-						include("vista/vactutbtitulo.php");
+						include("vista/vactutitulo.php");
 					}
 					//Ingreso usuario
 					if ($variable==25) {

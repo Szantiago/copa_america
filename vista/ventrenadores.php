@@ -31,7 +31,7 @@
         </div>
 		<div class="form-group col-lg-6" center>
 			<a href="home.php?var=13" class="btn btn-success">Agregar Equipos Dirigidos</a>
-			<a href="home.php?" class="btn btn-success">Agregar Titulo</a>
+			<a href="home.php?var=23" class="btn btn-success">Agregar Titulo</a>
 		</div>
 	</form>
 	<?php $consultaentrenador = $entrenador->consultar_entrenador(); ?>
