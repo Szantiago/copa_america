@@ -145,6 +145,9 @@
 					if ($variable==25) {
 						include("vista/vusuario.php");
 					}
+					if ($variable==26) {
+						include("vista/vdetallepartidos.php");
+					}
 				?> 
 				<?php
 					}
