@@ -8,7 +8,7 @@
 		<a href="home.php?var=9" class="btn btn-success btn-md">Entrenadores</a>
 		<a href="home.php?var=5" class="btn btn-success btn-md">Ciudades</a>
 		<a href="home.php?var=19" class="btn btn-success btn-md">Partidos</a>
-		<a href="home.php?var=" class="btn btn-success btn-md">Resultados</a>
+		<a href="home.php?var=26" class="btn btn-success btn-md">Resultados</a>
 		<a href="home.php?var=7" class="btn btn-success btn-md">Ciudades y Grupos</a>
 		<a href="home.php?var=17" class="btn btn-success btn-md">Nacionalidades</a>	
 		<a href="home.php?var=3" class="btn btn-success btn-md">Apuestas</a>
