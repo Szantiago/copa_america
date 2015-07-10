@@ -20,7 +20,7 @@
 	$equipo2		= $partidos->seleccionar_equipo();
 	$ciudadestadio2	= $partidos->seleccionar_ciudad();
 
-	echo $equipolocal." ".$equipovisit." ".$horario." ".$idciudadestadio." ".$marcadorlocal." ".$marcadorvisit ;
+	//echo $equipolocal." ".$equipovisit." ".$horario." ".$idciudadestadio." ".$marcadorlocal." ".$marcadorvisit ;
 	
 	if ($equipolocal && $equipovisit && $horario && $idciudadestadio && !$actu) 
 	{

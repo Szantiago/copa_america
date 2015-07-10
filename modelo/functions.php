@@ -25,5 +25,15 @@
                 $datos = $conexionBD -> ejeCon($consulta, 0);
                 return $datos;
         }
-		   
+		 /*
+         *	Función para calcular la edad según la fecha de nacimiento
+         */
+
+        function calcular_edad($fecha)
+        {
+                 $dias = explode("-", $fecha, 3);
+                 $dias = mktime(0,0,0,$dias[1],$dias[2],$dias[0]);
+                 $edad = (int)((time()-$dias)/31556926 );
+                 return $edad;
+        }   
 }

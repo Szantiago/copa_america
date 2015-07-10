@@ -62,6 +62,10 @@
 			$sql = "SELECT idnacionalidad, pais, nombrenacio FROM tbnacionalidad WHERE idnacionalidad='".$nacio."';";
 			return $this->SeleccionDatos($sql);
 		}
+		function get_calcular_edad($fechanacdt)
+		{
+			return $this->calcular_edad($fechanacdt);
+		}
 	}
 
 	

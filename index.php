@@ -1,4 +1,3 @@
-<?php include('modelo/mseguridad.php'); ?>
 <!DOCTYPE html>
 <html>
 	<head>
