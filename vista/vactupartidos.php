@@ -45,7 +45,7 @@
 		
 		<div class="form-group col-lg-6">
             <label for="">Horario:</label>
-            <input type="datetime-local" class="form-control" name="horario" value="<?=  $consultaedit[0]['horario'] ?>">
+            <input type="text" class="form-control" name="horario" value="<?=  $consultaedit[0]['horario'] ?>">
 		</div>
 		
 		<div class="form-group col-md-6">
