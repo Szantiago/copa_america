@@ -107,10 +107,10 @@
 					}
 					// tabla tipo de usuario
 					if ($variable==21) {
-						include("vista/vtbtipousuario.php");
+						
 					}
 					if ($variable==22) {
-						include("vista/vactutbtipousuario.php");
+						
 					}
 					// tabla titulo del entrenador
 					if ($variable==23) {
