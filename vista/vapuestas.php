@@ -1,7 +1,7 @@
 <?php include("controlador/capuestas.php"); ?>
 <div class="container-fluid">
     <h1>Apuestas</h1>
-    <form action="" method="POST">
+    <form action="home.php?var=27" method="POST">
         <div class="form-group col-lg-12">
             <div class="col-lg-4">
                 

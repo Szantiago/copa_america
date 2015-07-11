@@ -51,6 +51,29 @@
             return $this->getApuesta()->seleccionar_partido();
         }
 
+        public function getResultApu()
+        {
+            return $this->getApuesta()->consultar_resultado_apuesta();
+        }
+
+        public function getResultApuTod()
+        {
+            return $this->getApuesta()->consultar_resultados_apuesta();
+        }
+
+        public function getResApu($resloc, $apuloc, $resvis, $apuvis)
+        {
+                if ($resloc == $apuloc && $resvis == $apuvis) 
+                {
+                    echo "Ha acertado";
+                }
+                else
+                {
+                    echo "No ha acertado";
+                }
+
+        }
+
     }
 
     

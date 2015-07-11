@@ -88,4 +88,26 @@
 			$sql = "SELECT * FROM tbapuesta WHERE idusuario= '".$idusuario."';";
 			return $this->SeleccionDatos($sql);
 		}
+
+		public function consultar_resultado_apuesta()
+		{
+			$sql="SELECT tbp.idpartido,  tbe.nomequi as equilo, tbe1.nomequi as equivi, tbp.marcadorlocal as resloc, tbp.marcadorvisit as resvis, tbap.marcadorlocal as apuloc, tbap.marcadorvisit as apuvis, tbus.nombre, tbus.apellido FROM tbpartidos as tbp 
+					INNER JOIN tbequipo as tbe ON tbe.idequipo = tbp.equipolocal 
+					INNER JOIN tbequipo as tbe1 ON tbe1.idequipo = tbp.equipovisit
+    				INNER JOIN tbapuesta as tbap ON tbap.idpartido = tbp.idpartido
+    				INNER JOIN tbusuario as tbus ON tbap.idusuario = tbus.idusuario
+				WHERE tbap.idusuario = '$this->idusuario'";
+			return $this->SeleccionDatos($sql);
+		}
+
+		public function consultar_resultados_apuesta()
+		{
+			$sql="SELECT tbp.idpartido,  tbe.nomequi as equilo, tbe1.nomequi as equivi, tbp.marcadorlocal as resloc, tbp.marcadorvisit as resvis, tbap.marcadorlocal as apuloc, tbap.marcadorvisit as apuvis, tbus.nombre, tbus.apellido FROM tbpartidos as tbp 
+					INNER JOIN tbequipo as tbe ON tbe.idequipo = tbp.equipolocal 
+					INNER JOIN tbequipo as tbe1 ON tbe1.idequipo = tbp.equipovisit
+    				INNER JOIN tbapuesta as tbap ON tbap.idpartido = tbp.idpartido
+    				INNER JOIN tbusuario as tbus ON tbap.idusuario = tbus.idusuario
+				";
+			return $this->SeleccionDatos($sql);
+		}
 	}
