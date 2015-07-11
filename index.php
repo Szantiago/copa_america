@@ -8,6 +8,8 @@
 		<link href='http://fonts.googleapis.com/css?family=Chicle' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script  type="text/javascript" src="bootstrap/js/jquery-1.11.2.js"></script>
+		<script type="text/javascript" src="bootstrap/js/funciones.js"></script>
 	</head>
 	<div id="contenedor">		
 			<header>
@@ -116,13 +118,30 @@
 						</div>
 					</form>
 				<div class="col-md-2 menuarrib">
-				<a href="home.php?var=1" class="btn btn-primary btn-md">
+				<a href="index.php?var=1" class="btn btn-primary btn-md">
 				<span class="glyphicon glyphicon-pencil"></span>&nbsp;
 				REGISTRARSE</a>
 			</div>
 				</div>
 				
 			</div>
+		<?php 
+			$reg = isset($_GET['var']) ? $_GET['var'] : NULL; 
+			$perfil = "";
+		?>	
+		<?php if ($reg==1): ?>
+			<div class="row">
+				<div class="container-fluid" style="width: 700px">
+					<?php include('vista/vusuario.php'); ?>
+					<?php if ($ingre): ?>
+						<script>
+							alert('Usuario ingresado correctamente!');
+							location.href='index.php';
+						</script>
+					<?php endif ?>
+				</div>
+			</div>
+		<?php endif ?>
 			<div class="row-fluid banner">		
 				<img src="img/afi.png"  width="90%" align="center">
 				<img src="img/equipos.png"  width="90%" align="center">

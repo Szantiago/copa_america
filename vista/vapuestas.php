@@ -1,5 +1,4 @@
 <?php include("controlador/capuestas.php"); ?>
-
 <div class="container-fluid">
     <h1>Apuestas</h1>
     <form action="" method="POST">
@@ -8,7 +7,7 @@
                 
             </div>
             <div class="col-lg-4">
-                <label for="">Partido:</label>
+                <label for="">Seleccione partido:</label>
                 <select name="idpartido" id="" class="form-control">
                     <option value="">Seleccione partido</option>
                     <?php for($i=0 ; $i < count($part = $apuesta->getPartidos()) ; $i++): ?>

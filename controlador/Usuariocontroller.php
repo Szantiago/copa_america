@@ -14,7 +14,7 @@
         $insert         = isset($_POST['insert']) ? $_POST['insert'] : NULL;
         $actu           = isset($_POST['actu']) ? $_POST['actu'] : NULL;
         $idedit         = isset($_GET['idedit']) ? $_GET['idedit'] : NULL;
-        
+        $ingre = "";
         
         
         $usuario1 = new UsuarioController($numdoc, $nombre, $apellido, $email, $username, $password, $tipouser);
@@ -22,6 +22,7 @@
         if ($insert && !$actu) 
         {
             $usuario1->InsertarUsuario();
+            $ingre = 1;
         }
         
         if ($idedit) 
