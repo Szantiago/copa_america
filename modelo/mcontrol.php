@@ -20,7 +20,7 @@
 		if ($contdat == 1) 
 		{
 			$_SESSION["usuario"] 	= $datos[0]['nombre'];
-			$_SESSION["idUsuario"] 	= $datos[0]['numdoc'];
+			$_SESSION["idUsuario"] 	= $datos[0]['idusuario'];
 			$_SESSION["perfil"] 	= isset($datos[0]['tipouser']) ? $datos[0]['tipouser']:NULL;
 			$_SESSION["autenticado"] = 10;
 			echo "<script type='text/javascript'>window.location='../home.php';</script>";

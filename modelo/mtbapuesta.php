@@ -8,14 +8,27 @@
 
 	class Mapuesta extends Funciones
 	{
-		function __construct(){}
+
+		private $marcadorlocal 	= "";
+		private $marcadorvisit 	= "";
+		private $idpartido		= "";
+		private $idusuario		= "";
+
+		public function __construct($marcadorlocal, $marcadorvisit, $idpartido, $idusuario)
+		{
+			$this->marcadorlocal = $marcadorlocal;
+			$this->marcadorvisit = $marcadorvisit;
+			$this->idpartido = $idpartido;
+			$this->idusuario = $idusuario; 	
+		}	
 		
 		/*
 		 	Función para la insercion de los datos de la apuesta
 		 */
-		function insertar_apuesta($marcadorlocal, $marcadorvisit, $idpartido, $idusuario)
+
+		function insertar_apuesta()
 		{
-			$sql = "INSERT INTO `tbapuesta`(`marcadorlocal`, `marcadorvisit`, `idpartido`, `idusuario`) VALUES ('$marcadorlocal','$marcadorvisit','$idpartido','$idusuario')";
+			$sql = "INSERT INTO tbapuesta(marcadorlocal, marcadorvisit, idpartido, idusuario) VALUES ('$this->marcadorlocal','$this->marcadorvisit','$this->idpartido','$this->idusuario')";
 			$this -> cons($sql);
 		}
 		/*
@@ -53,8 +66,12 @@
 		/*
 		 	Función para la seleccionar los datos de los equipos
 		 */
-		function seleccionar_partido(){
-			$sql = "SELECT * FROM tbpartidos;";
+		function seleccionar_partido()
+		{
+			$sql = "SELECT tbp.idpartido, tbe.nomequi as equilo, tbe1.nomequi as equivi, tbp.horario FROM tbpartidos as tbp 
+						INNER JOIN tbequipo as tbe ON tbe.idequipo = tbp.equipolocal 
+						INNER JOIN tbequipo as tbe1 ON tbe1.idequipo = tbp.equipovisit 
+					WHERE NOW() < tbp.horario;";
 			return $this->SeleccionDatos($sql);
 		}
 		/*
