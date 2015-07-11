@@ -24,32 +24,10 @@
 			<div id="formularios" class="col-md-12"><!--DIV QUE VA A CARGAR LOS FORMULARIOS-->
 				 <?php
 					if ($variable==null) {
+						include("vista/vdetallepartidos.php");
 				?>			
 				<!--FORMULARIO DE EJEMPLO--> 
-				<h2>Registar Equipo</h1>
-				<br />
-				<form role="form" name="form1" method="POST" action="">		
-					<div class="form-group col-md-6">
-						<label>Nombre:</label><br />
-						<input name="nombre" type="text" class="form-control">
-						<br />
-						<label>Fecha de fundación:</label><br />
-						<input name="apellido" type="date" class="form-control">
-						<br />
-						<label>Pagina web:</label><br />
-						<input name="telefono" type="text" class="form-control">
-						<br />
-					</div>
-					<div class="form-group col-md-6">				
-						<label>Ciudad capital:</label><br />
-						<input name="direccion" type="text" class="form-control">
-						<br />
-						<label>Grupo:</label><br />
-						<input name="nacimiento" type="text" class="form-control">
-						<br />				
-						<input type="submit" value="Enviar" class="btn btn-success">
-					</div>
-				</form>
+				
 				<!--FIN FORMULARIO DE EJEMPLO-->
 				<?php
 					}
