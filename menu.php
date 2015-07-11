@@ -14,7 +14,8 @@
 			<a href="home.php?var=" class="btn btn-success btn-md">Administradores</a>								  
 		<?php endif ?>
 		<?php if ($perfil==1 || $perfil==2): ?>		
-			<a href="home.php?var=3" class="btn btn-success btn-md">Mis apuestas</a>
+			<a href="home.php?var=3" class="btn btn-success btn-md">Apuestas</a>
+			<a href="home.php?var=27" class="btn btn-success btn-md">Mis apuestas</a>
 			<a href="home.php?var=26" class="btn btn-success btn-md">Resultados</a>
 			<a href="vista/salir.php" class="btn btn-success btn-md">Salir</a>
 		<?php endif ?>
