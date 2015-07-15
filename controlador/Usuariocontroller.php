@@ -65,6 +65,12 @@
                 return $this->usuario->ConsultarUsuarios();
             }
 
+            public function TipoUsuario($idtipouser)
+            {
+                $tipouser = $this->usuario->ConsultaTipoUsuarioId($idtipouser);
+                echo $tipouser[0]['tipo'];
+            }
+
 	}
 
 	

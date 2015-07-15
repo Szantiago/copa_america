@@ -10,8 +10,7 @@
 			<a href="home.php?var=19" class="btn btn-success btn-md">Partidos</a>
 			<a href="home.php?var=7" class="btn btn-success btn-md">Ciudades y Grupos</a>
 			<a href="home.php?var=17" class="btn btn-success btn-md">Nacionalidades</a>	
-			<a href="home.php?var=" class="btn btn-success btn-md">Apostadores</a>
-			<a href="home.php?var=" class="btn btn-success btn-md">Administradores</a>								  
+			<a href="home.php?var=1" class="btn btn-success btn-md">Usuarios</a>							  
 		<?php endif ?>
 		<?php if ($perfil==1 || $perfil==2): ?>		
 			<a href="home.php?var=3" class="btn btn-success btn-md">Apuestas</a>

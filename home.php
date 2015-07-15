@@ -24,7 +24,7 @@
 			<div id="formularios" class="col-md-12"><!--DIV QUE VA A CARGAR LOS FORMULARIOS-->
 				 <?php
 					if ($variable==null) {
-						include("vista/vdetallepartidos.php");
+						include("vista/vdetalleapuestas.php");
 				?>			
 				<!--FORMULARIO DE EJEMPLO--> 
 				
@@ -125,6 +125,9 @@
 					}
 					if ($variable==26) {
 						include("vista/vdetallepartidos.php");
+					}
+					if ($variable==27) {
+						include("vista/vdetalleapuestas.php");
 					}
 				?> 
 				<?php

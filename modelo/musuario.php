@@ -61,4 +61,10 @@
             $sql = "SELECT * FROM tbtipousuario";
             return $this->SeleccionDatos($sql);
         }        
+
+        public function ConsultaTipoUsuarioId($idtipouser)
+        {
+            $sql = "SELECT * FROM tbtipousuario WHERE idtipousuario = '$idtipouser'";
+            return $this->SeleccionDatos($sql);
+        }
 	}
